@@ -5,7 +5,7 @@ function checkPassword() {
 
     if (password === "1434Jill") {
         window.location.href ="dashboard.html";
-    } else {
+    
         errorMessage.textContent = "Oops! Try again, queen 👑";
     }
 }
