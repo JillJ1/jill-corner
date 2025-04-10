@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jill’s Corner 💖</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome Back, Jill 💋</h1>
+      <p class="verse">"She is clothed with strength and dignity; she can laugh at the days to come." – Proverbs 31:25 (NIV)</p>
+    </header>
+
+    <section class="music-player">
+      <h2>🎧 Now Playing</h2>
+      <audio id="audio-player" controls>
+        <source src="your-playlist-preview.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="music-controls">
+        <button onclick="rewind()">⏪ 15s</button>
+        <button onclick="togglePlay()">⏯️</button>
+        <button onclick="forward()">15s ⏩</button>
+      </div>
+    </section>
+
+    <section class="goals">
+      <h2>📋 Daily To-Do List</h2>
+      <ul>
+        <li><input type="checkbox"> Finish school assignment 📚</li>
+        <li><input type="checkbox"> Do a self-care routine 🛁</li>
+        <li><input type="checkbox"> Check budget & spending 💵</li>
+      </ul>
+    </section>
+
+    <section class="mood">
+      <h2>💖 Affirmation</h2>
+      <p>You’re not behind—you’re blooming on your own time 🌸</p>
+    </section>
+
+    <nav class="nav-buttons">
+      <button>🌱 Growth</button>
+      <button>👜 Career</button>
+      <button>🙏 Faith</button>
+      <button>💅 Style</button>
+    </nav>
+
+    <footer>
+      <a href="https://www.linkedin.com" target="_blank" class="linkedin">🔗 My LinkedIn</a>
+    </footer>
+  </div>
+
+  <script>
+    const audio = document.getElementById("audio-player");
+
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+
+    function rewind() {
+      audio.currentTime -= 15;
+    }
+
+    function forward() {
+      audio.currentTime += 15;
+    }
+  </script>
+</body>
+</html>
