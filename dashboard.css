@@ -16,6 +16,7 @@ body {
   max-width: 800px;
   border-radius: 20px;
   box-shadow: 0 0 15px hotpink;
+  position: relative;
 }
 
 header h1 {
@@ -62,6 +63,9 @@ header h1 {
   border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 footer {
@@ -75,4 +79,25 @@ footer {
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+.icon {
+  width: 60px;
+  position: absolute;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.inline-icon {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
 }
